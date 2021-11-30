@@ -7,7 +7,8 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AppService {
-  public notificationURL = 'http://localhost:3000/subscribe';
+  public notificationURL =
+    'https://expressjs-wpydsd--3000.local.webcontainer.io/';
 
   constructor(private _http: HttpClient) {}
 

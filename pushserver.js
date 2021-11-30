@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/subscribe', (req, res) => {
+  console.log('checks');
   let sub = req.body;
   res.set('Content-Type', 'application/json');
   webpush.setVapidDetails(

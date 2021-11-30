@@ -7,9 +7,12 @@ import { HelloComponent } from './hello.component';
 
 import { environment } from '../environments/environments';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
