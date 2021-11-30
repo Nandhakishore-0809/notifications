@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private swPush: SwPush) {}
 
   readonly VAPID_PUBLIC_KEY =
-    'BGLV4nCOAw_qjaWCDW4PtUk5atAdkHGYPDrSXYHpR31MimhBuIWv6GpoDH0RMK5S-w8WOEtSTa03V1NxXnuOC0o';
+    'BJuJKigoLdIfSxV_3bJnZOT0zZU-nTkZgZqFVEATgb4oDTj6Drj9dnvJ3qXCsqxumQVQ4O3jFcIO9_RVIoYEegI';
 
   subscribeToNotifications() {
     this.swPush
