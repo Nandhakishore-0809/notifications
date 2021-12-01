@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private swPush: SwPush, public _ws: AppService) {}
 
   readonly VAPID_PUBLIC_KEY =
-    'BJuJKigoLdIfSxV_3bJnZOT0zZU-nTkZgZqFVEATgb4oDTj6Drj9dnvJ3qXCsqxumQVQ4O3jFcIO9_RVIoYEegI';
+    'BExV10y8NjJdzQgnen1RQlu681dSKCStyKkRvFlrxv-jzqmHl7gjHpYaDZlvSJf4Wg8x3SGFQxWr2_GDaamVsSw';
 
   subscribeToNotifications() {
     this.swPush
@@ -20,7 +20,7 @@ export class AppComponent {
         serverPublicKey: this.VAPID_PUBLIC_KEY,
       })
       .then((sub) => {
-        this._ws.postSubscription(sub).subscribe();
+        console.log(JSON.stringify(sub));
       })
       .catch((err) => console.error('****requestSubscription Error: ', err));
   }
